@@ -1,0 +1,6 @@
+framework module Pods_WorkOutForMuscles {
+  umbrella header "Pods-WorkOutForMuscles-umbrella.h"
+
+  export *
+  module * { export * }
+}
