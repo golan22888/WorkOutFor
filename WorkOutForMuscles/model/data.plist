@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Pectoralis Major</string>
+		<key>image_name</key>
+		<string>pectoralisMajor</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Butterfly</string>
+				<key>youtube_id</key>
+				<string>Zbo5OCz2Xrw</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Bench Press</string>
+				<key>youtube_id</key>
+				<string>gRVjAtPip0Y</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Push Up</string>
+				<key>youtube_id</key>
+				<string>IODxDxX7oi4</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Biceps</string>
+		<key>image_name</key>
+		<string>icon_biceps</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Concentration Curl</string>
+				<key>youtube_id</key>
+				<string>0AUGkch3tzc</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Barbell Curl</string>
+				<key>youtube_id</key>
+				<string>LY1V6UbRHFM</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Overhead Cable Curl</string>
+				<key>youtube_id</key>
+				<string>5_n3gVeGEqc</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Abdominals</string>
+		<key>image_name</key>
+		<string>icon_abs</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Plank</string>
+				<key>youtube_id</key>
+				<string>pSHjTRCQxIw</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Dumbbell V-Sit Cross Jab</string>
+				<key>youtube_id</key>
+				<string>QIIjV_4G5d4</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Elbow to Knee</string>
+				<key>youtube_id</key>
+				<string>FcjwuLMdGyM</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Quadriceps</string>
+		<key>image_name</key>
+		<string>icon_quad</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Squat</string>
+				<key>youtube_id</key>
+				<string>X0qC1k0Zi6k</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Leg Extesion</string>
+				<key>youtube_id</key>
+				<string>YyvSfVjQeL0</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Lunge</string>
+				<key>youtube_id</key>
+				<string>D7KaRcUTQeE</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gastrocnemius</string>
+		<key>image_name</key>
+		<string>icon_gastro</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Smith Machine Calf Raise</string>
+				<key>youtube_id</key>
+				<string>AW6us_9YNXo</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Calf Press</string>
+				<key>youtube_id</key>
+				<string>W-NU8NUS8lI</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hamstring</string>
+		<key>image_name</key>
+		<string>icon_hamstring</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Lying Leg Curls</string>
+				<key>youtube_id</key>
+				<string>1Tq3QdYUuHs</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Deadlift</string>
+				<key>youtube_id</key>
+				<string>RyJbvWAh6ec</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gluteus Maximus</string>
+		<key>image_name</key>
+		<string>icon_gluteus</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Hip Thrust</string>
+				<key>youtube_id</key>
+				<string>SEdqd1n0cvg</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Cable Kickback</string>
+				<key>youtube_id</key>
+				<string>lMyeFk_46sU</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Erector Spinea</string>
+		<key>image_name</key>
+		<string>icon_erector</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Back Extention</string>
+				<key>youtube_id</key>
+				<string>0iZ1l0DMLJI</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Latissimus Dorsi</string>
+		<key>image_name</key>
+		<string>icon_latissimus</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Pull Ups</string>
+				<key>youtube_id</key>
+				<string>eGo4IYlbE5g</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>T-Bar Rows</string>
+				<key>youtube_id</key>
+				<string>SbZycT7Eq58</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Bent-Over Row</string>
+				<key>youtube_id</key>
+				<string>pYcpY20QaE8</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Triceps</string>
+		<key>image_name</key>
+		<string>icon_triceps</string>
+		<key>excs</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Close-Grip Bench Press</string>
+				<key>youtube_id</key>
+				<string>nEF0bv2FW94</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Seated Triceps Press</string>
+				<key>youtube_id</key>
+				<string>YbX7Wd8jQ-Q</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Triceps Pushdown </string>
+				<key>youtube_id</key>
+				<string>2-LAMcpzODU</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

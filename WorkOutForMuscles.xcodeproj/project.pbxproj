@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0CC9F01FA059F9000407E1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CC9EF1FA059F9000407E1 /* HistoryViewController.swift */; };
+		3B0CC9F31FA08879000407E1 /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CC9F21FA08879000407E1 /* cell.swift */; };
+		3B0F4DBF1F98F5AF00C079A4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F4DBE1F98F5AF00C079A4 /* Data.swift */; };
+		3B0F4DC11F990E5600C079A4 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B0F4DC01F990E5600C079A4 /* data.plist */; };
+		3B0F4DC31F9920C700C079A4 /* MuscleDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F4DC21F9920C700C079A4 /* MuscleDescriptionViewController.swift */; };
+		3B1A31BF1F989D330008D229 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A31BE1F989D330008D229 /* VideoViewController.swift */; };
 		3B28BC231F951C2900F2C86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28BC221F951C2900F2C86E /* AppDelegate.swift */; };
-		3B28BC251F951C2900F2C86E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28BC241F951C2900F2C86E /* ViewController.swift */; };
+		3B28BC251F951C2900F2C86E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28BC241F951C2900F2C86E /* MainViewController.swift */; };
 		3B28BC281F951C2900F2C86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B28BC261F951C2900F2C86E /* Main.storyboard */; };
 		3B28BC2A1F951C2900F2C86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B28BC291F951C2900F2C86E /* Assets.xcassets */; };
 		3B28BC2D1F951C2900F2C86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B28BC2B1F951C2900F2C86E /* LaunchScreen.storyboard */; };
 		3B28BC381F951C2900F2C86E /* WorkOutForMusclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28BC371F951C2900F2C86E /* WorkOutForMusclesTests.swift */; };
 		3B28BC431F951C2900F2C86E /* WorkOutForMusclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28BC421F951C2900F2C86E /* WorkOutForMusclesUITests.swift */; };
+		3B50D0891F9E68B300034705 /* WorkOutForMuscles.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B50D0871F9E68B300034705 /* WorkOutForMuscles.xcdatamodeld */; };
+		3B50D08B1F9F04CE00034705 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50D08A1F9F04CE00034705 /* DBManager.swift */; };
+		7A82BAFFDCE8247EA6446549 /* Pods_WorkOutForMusclesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F537C65FDC849BCAB4D10530 /* Pods_WorkOutForMusclesTests.framework */; };
+		B33CB1033F2B11FAB41C044D /* Pods_WorkOutForMusclesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7321E25E6FDB38D238B02DA4 /* Pods_WorkOutForMusclesUITests.framework */; };
+		DCC11268C87E1E8C93078B3F /* Pods_WorkOutForMuscles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882AF1FE7BAE07B9CA2CE7EE /* Pods_WorkOutForMuscles.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02F980AAF4BA9F7A7406DA26 /* Pods-WorkOutForMusclesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkOutForMusclesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkOutForMusclesTests/Pods-WorkOutForMusclesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B0CC9EF1FA059F9000407E1 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		3B0CC9F21FA08879000407E1 /* cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		3B0F4DBE1F98F5AF00C079A4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3B0F4DC01F990E5600C079A4 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		3B0F4DC21F9920C700C079A4 /* MuscleDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleDescriptionViewController.swift; sourceTree = "<group>"; };
+		3B1A31BE1F989D330008D229 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		3B28BC1F1F951C2900F2C86E /* WorkOutForMuscles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOutForMuscles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B28BC221F951C2900F2C86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B28BC241F951C2900F2C86E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B28BC241F951C2900F2C86E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3B28BC271F951C2900F2C86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B28BC291F951C2900F2C86E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B28BC2C1F951C2900F2C86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +65,16 @@
 		3B28BC3E1F951C2900F2C86E /* WorkOutForMusclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkOutForMusclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B28BC421F951C2900F2C86E /* WorkOutForMusclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutForMusclesUITests.swift; sourceTree = "<group>"; };
 		3B28BC441F951C2900F2C86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B50D0881F9E68B300034705 /* WorkOutForMuscles.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkOutForMuscles.xcdatamodel; sourceTree = "<group>"; };
+		3B50D08A1F9F04CE00034705 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		45B17A4F7BECA83131C3F4B8 /* Pods-WorkOutForMusclesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkOutForMusclesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkOutForMusclesUITests/Pods-WorkOutForMusclesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5658C8E782D476D1F4EBA060 /* Pods-WorkOutForMusclesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkOutForMusclesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkOutForMusclesUITests/Pods-WorkOutForMusclesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63D069A9F738B0343F99AB96 /* Pods-WorkOutForMusclesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkOutForMusclesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkOutForMusclesTests/Pods-WorkOutForMusclesTests.release.xcconfig"; sourceTree = "<group>"; };
+		7321E25E6FDB38D238B02DA4 /* Pods_WorkOutForMusclesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkOutForMusclesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882AF1FE7BAE07B9CA2CE7EE /* Pods_WorkOutForMuscles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkOutForMuscles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9B26E43DA4D585146E9EA0 /* Pods-WorkOutForMuscles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkOutForMuscles.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkOutForMuscles/Pods-WorkOutForMuscles.release.xcconfig"; sourceTree = "<group>"; };
+		BE4EAAFA5A644AD05B1FF80D /* Pods-WorkOutForMuscles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkOutForMuscles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkOutForMuscles/Pods-WorkOutForMuscles.debug.xcconfig"; sourceTree = "<group>"; };
+		F537C65FDC849BCAB4D10530 /* Pods_WorkOutForMusclesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkOutForMusclesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC11268C87E1E8C93078B3F /* Pods_WorkOutForMuscles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A82BAFFDCE8247EA6446549 /* Pods_WorkOutForMusclesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +98,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33CB1033F2B11FAB41C044D /* Pods_WorkOutForMusclesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1FBFF23C386D22868F6960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				882AF1FE7BAE07B9CA2CE7EE /* Pods_WorkOutForMuscles.framework */,
+				F537C65FDC849BCAB4D10530 /* Pods_WorkOutForMusclesTests.framework */,
+				7321E25E6FDB38D238B02DA4 /* Pods_WorkOutForMusclesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B0CC9F11FA087DA000407E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B0CC9F21FA08879000407E1 /* cell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B0F4DBD1F98F59C00C079A4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3B50D0861F9E687700034705 /* CoreData */,
+				3B0F4DBE1F98F5AF00C079A4 /* Data.swift */,
+				3B0F4DC01F990E5600C079A4 /* data.plist */,
+				3B50D08A1F9F04CE00034705 /* DBManager.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3B1A31C01F989E8A0008D229 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B28BC241F951C2900F2C86E /* MainViewController.swift */,
+				3B0F4DC21F9920C700C079A4 /* MuscleDescriptionViewController.swift */,
+				3B1A31BE1F989D330008D229 /* VideoViewController.swift */,
+				3B0CC9EF1FA059F9000407E1 /* HistoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		3B28BC161F951C2900F2C86E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +152,8 @@
 				3B28BC361F951C2900F2C86E /* WorkOutForMusclesTests */,
 				3B28BC411F951C2900F2C86E /* WorkOutForMusclesUITests */,
 				3B28BC201F951C2900F2C86E /* Products */,
+				5881D55052B0ED8EBDE5A3DC /* Pods */,
+				2F1FBFF23C386D22868F6960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +170,10 @@
 		3B28BC211F951C2900F2C86E /* WorkOutForMuscles */ = {
 			isa = PBXGroup;
 			children = (
+				3B0CC9F11FA087DA000407E1 /* View */,
+				3B0F4DBD1F98F59C00C079A4 /* model */,
+				3B1A31C01F989E8A0008D229 /* Controllers */,
 				3B28BC221F951C2900F2C86E /* AppDelegate.swift */,
-				3B28BC241F951C2900F2C86E /* ViewController.swift */,
 				3B28BC261F951C2900F2C86E /* Main.storyboard */,
 				3B28BC291F951C2900F2C86E /* Assets.xcassets */,
 				3B28BC2B1F951C2900F2C86E /* LaunchScreen.storyboard */,
@@ -125,6 +200,27 @@
 			path = WorkOutForMusclesUITests;
 			sourceTree = "<group>";
 		};
+		3B50D0861F9E687700034705 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3B50D0871F9E68B300034705 /* WorkOutForMuscles.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5881D55052B0ED8EBDE5A3DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE4EAAFA5A644AD05B1FF80D /* Pods-WorkOutForMuscles.debug.xcconfig */,
+				8E9B26E43DA4D585146E9EA0 /* Pods-WorkOutForMuscles.release.xcconfig */,
+				02F980AAF4BA9F7A7406DA26 /* Pods-WorkOutForMusclesTests.debug.xcconfig */,
+				63D069A9F738B0343F99AB96 /* Pods-WorkOutForMusclesTests.release.xcconfig */,
+				5658C8E782D476D1F4EBA060 /* Pods-WorkOutForMusclesUITests.debug.xcconfig */,
+				45B17A4F7BECA83131C3F4B8 /* Pods-WorkOutForMusclesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B28BC471F951C2900F2C86E /* Build configuration list for PBXNativeTarget "WorkOutForMuscles" */;
 			buildPhases = (
+				B82FBE89D09FDB4497BFE52B /* [CP] Check Pods Manifest.lock */,
 				3B28BC1B1F951C2900F2C86E /* Sources */,
 				3B28BC1C1F951C2900F2C86E /* Frameworks */,
 				3B28BC1D1F951C2900F2C86E /* Resources */,
+				3E04B9C246C94F720E69B45B /* [CP] Embed Pods Frameworks */,
+				E7DE83DB2AF000EDDB5E9E53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B28BC4A1F951C2900F2C86E /* Build configuration list for PBXNativeTarget "WorkOutForMusclesTests" */;
 			buildPhases = (
+				E3C76B8F6529AA4ECD4DBF42 /* [CP] Check Pods Manifest.lock */,
 				3B28BC2F1F951C2900F2C86E /* Sources */,
 				3B28BC301F951C2900F2C86E /* Frameworks */,
 				3B28BC311F951C2900F2C86E /* Resources */,
+				3D4EBEE28CD150C3B5A0634A /* [CP] Embed Pods Frameworks */,
+				3266072A5C400A9439134E6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B28BC4D1F951C2900F2C86E /* Build configuration list for PBXNativeTarget "WorkOutForMusclesUITests" */;
 			buildPhases = (
+				772ABCB5498DB10B06D46735 /* [CP] Check Pods Manifest.lock */,
 				3B28BC3A1F951C2900F2C86E /* Sources */,
 				3B28BC3B1F951C2900F2C86E /* Frameworks */,
 				3B28BC3C1F951C2900F2C86E /* Resources */,
+				4FF2176CF6952995079F4F97 /* [CP] Embed Pods Frameworks */,
+				B6BC6FE8406FD1F0A50F8FC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +339,7 @@
 			files = (
 				3B28BC2D1F951C2900F2C86E /* LaunchScreen.storyboard in Resources */,
 				3B28BC2A1F951C2900F2C86E /* Assets.xcassets in Resources */,
+				3B0F4DC11F990E5600C079A4 /* data.plist in Resources */,
 				3B28BC281F951C2900F2C86E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +360,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3266072A5C400A9439134E6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkOutForMusclesTests/Pods-WorkOutForMusclesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D4EBEE28CD150C3B5A0634A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkOutForMusclesTests/Pods-WorkOutForMusclesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E04B9C246C94F720E69B45B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkOutForMuscles/Pods-WorkOutForMuscles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF2176CF6952995079F4F97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkOutForMusclesUITests/Pods-WorkOutForMusclesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		772ABCB5498DB10B06D46735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6BC6FE8406FD1F0A50F8FC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkOutForMusclesUITests/Pods-WorkOutForMusclesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82FBE89D09FDB4497BFE52B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C76B8F6529AA4ECD4DBF42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7DE83DB2AF000EDDB5E9E53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkOutForMuscles/Pods-WorkOutForMuscles-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B28BC1B1F951C2900F2C86E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B28BC251F951C2900F2C86E /* ViewController.swift in Sources */,
+				3B50D0891F9E68B300034705 /* WorkOutForMuscles.xcdatamodeld in Sources */,
+				3B0F4DC31F9920C700C079A4 /* MuscleDescriptionViewController.swift in Sources */,
+				3B28BC251F951C2900F2C86E /* MainViewController.swift in Sources */,
 				3B28BC231F951C2900F2C86E /* AppDelegate.swift in Sources */,
+				3B1A31BF1F989D330008D229 /* VideoViewController.swift in Sources */,
+				3B0F4DBF1F98F5AF00C079A4 /* Data.swift in Sources */,
+				3B50D08B1F9F04CE00034705 /* DBManager.swift in Sources */,
+				3B0CC9F01FA059F9000407E1 /* HistoryViewController.swift in Sources */,
+				3B0CC9F31FA08879000407E1 /* cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,30 +663,37 @@
 		};
 		3B28BC481F951C2900F2C86E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4EAAFA5A644AD05B1FF80D /* Pods-WorkOutForMuscles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorkOutForMuscles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = golanLaptop.WorkOutForMuscles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3B28BC491F951C2900F2C86E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9B26E43DA4D585146E9EA0 /* Pods-WorkOutForMuscles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorkOutForMuscles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = golanLaptop.WorkOutForMuscles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		3B28BC4B1F951C2900F2C86E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F980AAF4BA9F7A7406DA26 /* Pods-WorkOutForMusclesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +708,7 @@
 		};
 		3B28BC4C1F951C2900F2C86E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D069A9F738B0343F99AB96 /* Pods-WorkOutForMusclesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +723,7 @@
 		};
 		3B28BC4E1F951C2900F2C86E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5658C8E782D476D1F4EBA060 /* Pods-WorkOutForMusclesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WorkOutForMusclesUITests/Info.plist;
@@ -477,6 +737,7 @@
 		};
 		3B28BC4F1F951C2900F2C86E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B17A4F7BECA83131C3F4B8 /* Pods-WorkOutForMusclesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WorkOutForMusclesUITests/Info.plist;
@@ -507,6 +768,7 @@
 				3B28BC491F951C2900F2C86E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B28BC4A1F951C2900F2C86E /* Build configuration list for PBXNativeTarget "WorkOutForMusclesTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +777,7 @@
 				3B28BC4C1F951C2900F2C86E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B28BC4D1F951C2900F2C86E /* Build configuration list for PBXNativeTarget "WorkOutForMusclesUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,8 +786,22 @@
 				3B28BC4F1F951C2900F2C86E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B50D0871F9E68B300034705 /* WorkOutForMuscles.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B50D0881F9E68B300034705 /* WorkOutForMuscles.xcdatamodel */,
+			);
+			currentVersion = 3B50D0881F9E68B300034705 /* WorkOutForMuscles.xcdatamodel */;
+			path = WorkOutForMuscles.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B28BC171F951C2900F2C86E /* Project object */;
 }

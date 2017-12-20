@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M7O-8z-aso">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="WorkOutForMuscles" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,391 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musclesPic" translatesAutoresizingMaskIntoConstraints="NO" id="d2S-sa-rw1">
+                                <rect key="frame" x="0.0" y="176" width="375" height="315"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsS-lc-oTR" userLabel="chestBtn">
+                                <rect key="frame" x="249" y="220.5" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7i9-Mt-rDu"/>
+                                    <constraint firstAttribute="height" constant="25" id="vqB-cs-VEu"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgC-sx-qg8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsa-DJ-kZg" userLabel="bicepsLBtn">
+                                <rect key="frame" x="217.5" y="233.5" width="30" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="K6O-TI-BqB"/>
+                                    <constraint firstAttribute="width" constant="30" id="Z3q-oU-6AT"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFb-nF-x28"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKb-EJ-Skk" userLabel="bicepsRBtn">
+                                <rect key="frame" x="311.5" y="233.5" width="30" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XuZ-Oc-TbV"/>
+                                    <constraint firstAttribute="width" constant="30" id="pKJ-9X-WTu"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tN8-HV-tBt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOm-cF-1wa" userLabel="absBtn">
+                                <rect key="frame" x="249" y="251" width="61" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="GLQ-JI-7Pb"/>
+                                    <constraint firstAttribute="height" constant="64" id="TkC-eh-0UZ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyT-1v-iLR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-Lo-Ioa" userLabel="quadBtn">
+                                <rect key="frame" x="242" y="320.5" width="75" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="Ysg-jr-jYs"/>
+                                    <constraint firstAttribute="width" constant="75" id="aNs-hr-88S"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nah-k9-5GF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYs-1j-31t" userLabel="gastroBtn">
+                                <rect key="frame" x="75" y="414.5" width="68" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="452-M9-2Dc"/>
+                                    <constraint firstAttribute="width" constant="68" id="sOn-a5-Z6j"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96k-zr-f39"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-K1-ULE" userLabel="hamstringBtn">
+                                <rect key="frame" x="75" y="346.5" width="75" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="d2z-b5-uce"/>
+                                    <constraint firstAttribute="width" constant="75" id="lCi-tL-Tfg"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xk-dG-qeU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1S-L7-Im9" userLabel="gluteusBtn">
+                                <rect key="frame" x="75" y="309" width="71" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="0QO-br-Bf7"/>
+                                    <constraint firstAttribute="width" constant="71" id="NGu-ut-8Oo"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U62-Eh-Duf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2h-BD-ugb" userLabel="erectorBtn">
+                                <rect key="frame" x="103.5" y="191.5" width="14" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="UVZ-AR-kMl"/>
+                                    <constraint firstAttribute="width" constant="14" id="ax2-KX-C5x"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nv9-ap-AQn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7li-31-xja" userLabel="latissimusRBtn">
+                                <rect key="frame" x="120" y="237.5" width="23" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Xhr-FN-Ci4"/>
+                                    <constraint firstAttribute="width" constant="23" id="tYk-Xb-HFa"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5oc-q4-uKj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTW-Wv-iSb" userLabel="latissimusLBtn">
+                                <rect key="frame" x="78.5" y="237.5" width="23" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="4Rc-8h-YJX"/>
+                                    <constraint firstAttribute="width" constant="23" id="ciO-Ug-iRi"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPb-Ag-Xa2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYY-Zy-aXd" userLabel="tricepsRBtn">
+                                <rect key="frame" x="145" y="229.5" width="25" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2EP-Zr-asM"/>
+                                    <constraint firstAttribute="width" constant="25" id="gyn-cm-bZt"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10y-tF-4EP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ja-Co-mNj" userLabel="tricepsLBtn">
+                                <rect key="frame" x="53" y="226" width="25" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="hEr-6d-tfQ"/>
+                                    <constraint firstAttribute="width" constant="25" id="zzq-U5-6cC"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="moveToExcersices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPG-BW-Vy2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXq-Po-Njw">
+                                <rect key="frame" x="95" y="605" width="184" height="30"/>
+                                <state key="normal" title="Share WorkOutForMuscles"/>
+                                <connections>
+                                    <action selector="shareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgU-qp-cZz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WOm-cF-1wa" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.85" id="3hO-MD-etl"/>
+                            <constraint firstItem="d1S-L7-Im9" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.59" id="4PV-1a-aoQ"/>
+                            <constraint firstItem="7ja-Co-mNj" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.75" id="81j-rI-s1V"/>
+                            <constraint firstItem="c9Z-Lo-Ioa" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="1.49" id="A4f-uq-i2a"/>
+                            <constraint firstItem="DTW-Wv-iSb" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.81" id="Bmo-bJ-02G"/>
+                            <constraint firstItem="V2h-BD-ugb" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.75" id="Fx9-gw-aeC"/>
+                            <constraint firstItem="SKb-EJ-Skk" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.76" id="Jka-py-YfN"/>
+                            <constraint firstItem="d2S-sa-rw1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O0i-7E-JXU"/>
+                            <constraint firstItem="CXq-Po-Njw" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" id="RnX-zJ-dYS"/>
+                            <constraint firstItem="c9Z-Lo-Ioa" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="1.09" id="SF6-2X-Hux"/>
+                            <constraint firstItem="WOm-cF-1wa" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="1.49" id="UEN-HE-AhQ"/>
+                            <constraint firstItem="PsS-lc-oTR" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="1.49" id="UEi-w5-nFP"/>
+                            <constraint firstAttribute="trailing" secondItem="d2S-sa-rw1" secondAttribute="trailing" id="UNP-D4-kKO"/>
+                            <constraint firstItem="Hsa-DJ-kZg" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.76" id="USl-8m-NzN"/>
+                            <constraint firstItem="TYY-Zy-aXd" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.76" id="WCE-LE-GjJ"/>
+                            <constraint firstItem="kJb-K1-ULE" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.6" id="Y3k-Ch-5IJ"/>
+                            <constraint firstItem="7ja-Co-mNj" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.35" id="aJC-a9-2Kt"/>
+                            <constraint firstItem="PsS-lc-oTR" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.7" id="die-o8-Nq1"/>
+                            <constraint firstItem="DTW-Wv-iSb" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.48" id="fWI-Tc-EML"/>
+                            <constraint firstItem="bYs-1j-31t" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="1.37" id="g5y-r3-DcY"/>
+                            <constraint firstItem="7li-31-xja" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.81" id="gDN-db-Rf0"/>
+                            <constraint firstItem="7li-31-xja" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.7" id="hmi-Ck-EBX"/>
+                            <constraint firstItem="bYs-1j-31t" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.58" id="jSp-dJ-nnN"/>
+                            <constraint firstItem="Hsa-DJ-kZg" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="1.24" id="lJd-Z8-PJg"/>
+                            <constraint firstItem="d2S-sa-rw1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lbX-51-m0A"/>
+                            <constraint firstItem="TYY-Zy-aXd" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.84" id="nsw-Hz-BzJ"/>
+                            <constraint firstItem="SKb-EJ-Skk" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="1.74" id="pvj-Wx-WqR"/>
+                            <constraint firstItem="kJb-K1-ULE" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="1.14" id="sYr-l3-8iN"/>
+                            <constraint firstItem="V2h-BD-ugb" firstAttribute="centerX" secondItem="d2S-sa-rw1" secondAttribute="centerX" multiplier="0.59" id="tLb-Nw-aEs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CXq-Po-Njw" secondAttribute="bottom" constant="32" id="uf4-WW-mLF"/>
+                            <constraint firstItem="d1S-L7-Im9" firstAttribute="centerY" secondItem="d2S-sa-rw1" secondAttribute="centerY" multiplier="0.99" id="xuf-Rk-VTA"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ygI-fZ-JBa">
+                        <barButtonItem key="leftBarButtonItem" title="Rate us" id="B4K-bk-RLH">
+                            <connections>
+                                <action selector="rateAction:" destination="BYZ-38-t0r" id="cKc-7G-sLJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icon_history" id="dQM-m6-3a4">
+                            <connections>
+                                <segue destination="04j-oP-aYM" kind="show" id="sXT-Yt-MKP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="d2S-sa-rw1" id="eUA-pj-hht"/>
+                        <segue destination="V5e-2k-ioJ" kind="show" identifier="descSegue" id="Fsn-vr-Y4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xVg-87-TyG">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </scrollView>
             </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="-151.57421289355324"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="nqg-tq-tFG">
+            <objects>
+                <tableViewController id="04j-oP-aYM" customClass="HistoryViewController" customModule="WorkOutForMuscles" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Ga-Q1-xua">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="VI5-3d-Ulg" customClass="cell" customModule="WorkOutForMuscles" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VI5-3d-Ulg" id="3v2-HO-b2w">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="muscle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moo-YA-WYv">
+                                            <rect key="frame" x="8" y="2" width="59" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="excersice" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls9-6F-ax7">
+                                            <rect key="frame" x="8" y="24" width="73" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiu-UE-Ass">
+                                            <rect key="frame" x="332" y="8" width="35" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="moo-YA-WYv" firstAttribute="leading" secondItem="3v2-HO-b2w" secondAttribute="leading" constant="8" id="6Yv-IJ-H1z"/>
+                                        <constraint firstItem="tiu-UE-Ass" firstAttribute="top" secondItem="3v2-HO-b2w" secondAttribute="top" constant="8" id="9QL-ha-941"/>
+                                        <constraint firstItem="moo-YA-WYv" firstAttribute="top" secondItem="3v2-HO-b2w" secondAttribute="top" constant="2" id="duM-18-8uJ"/>
+                                        <constraint firstItem="ls9-6F-ax7" firstAttribute="leading" secondItem="3v2-HO-b2w" secondAttribute="leading" constant="8" id="oWZ-qW-adQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="tiu-UE-Ass" secondAttribute="trailing" constant="8" id="qcq-6L-gaH"/>
+                                        <constraint firstItem="ls9-6F-ax7" firstAttribute="top" secondItem="3v2-HO-b2w" secondAttribute="top" constant="24" id="uH1-K2-hqy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLable" destination="tiu-UE-Ass" id="sjC-jE-OD1"/>
+                                    <outlet property="excersiceLabel" destination="ls9-6F-ax7" id="MXv-ba-hrU"/>
+                                    <outlet property="muscleLabel" destination="moo-YA-WYv" id="fMJ-Pc-4S1"/>
+                                    <segue destination="K6d-sK-NBl" kind="show" identifier="videoSegue" id="G7d-Ne-9VM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="04j-oP-aYM" id="6bb-se-c8P"/>
+                            <outlet property="delegate" destination="04j-oP-aYM" id="OfE-ul-ShB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqV-sH-Q3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874" y="-494"/>
+        </scene>
+        <!--Muscle Description View Controller-->
+        <scene sceneID="Blj-su-7Gk">
+            <objects>
+                <viewController id="V5e-2k-ioJ" customClass="MuscleDescriptionViewController" customModule="WorkOutForMuscles" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4u-Hm-FoB"/>
+                        <viewControllerLayoutGuide type="bottom" id="O8S-u1-d7h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4zG-Rr-zYk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7P8-hi-a5I">
+                                <rect key="frame" x="37.5" y="64" width="300" height="100"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-eE-NUJ">
+                                <rect key="frame" x="0.0" y="164" width="375" height="503"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="U82-r0-KDj">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U82-r0-KDj" id="wrG-aq-aTe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="K6d-sK-NBl" kind="show" identifier="videoSegue" id="yHY-Iw-iPW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="V5e-2k-ioJ" id="Fhq-M8-ukP"/>
+                                    <outlet property="delegate" destination="V5e-2k-ioJ" id="0Xq-4q-OBK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7P8-hi-a5I" firstAttribute="centerX" secondItem="4zG-Rr-zYk" secondAttribute="centerX" id="IW4-rQ-wY7"/>
+                            <constraint firstItem="O8S-u1-d7h" firstAttribute="top" secondItem="i2a-eE-NUJ" secondAttribute="bottom" id="MXY-TS-YaK"/>
+                            <constraint firstItem="i2a-eE-NUJ" firstAttribute="top" secondItem="7P8-hi-a5I" secondAttribute="bottom" id="YIi-Zq-vt7"/>
+                            <constraint firstItem="i2a-eE-NUJ" firstAttribute="leading" secondItem="4zG-Rr-zYk" secondAttribute="leading" id="bYf-mt-rS7"/>
+                            <constraint firstItem="7P8-hi-a5I" firstAttribute="top" secondItem="g4u-Hm-FoB" secondAttribute="bottom" id="e1q-b2-bHW"/>
+                            <constraint firstAttribute="trailing" secondItem="i2a-eE-NUJ" secondAttribute="trailing" id="zGg-as-Ik7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="7P8-hi-a5I" id="9ia-ty-eNo"/>
+                        <outlet property="tableView" destination="i2a-eE-NUJ" id="NA9-u4-yNg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jow-3a-ASC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="244"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="WS3-Ib-A6K">
+            <objects>
+                <viewController id="K6d-sK-NBl" customClass="VideoViewController" customModule="WorkOutForMuscles" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IvN-MV-LdH"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfr-nh-TL1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2SE-R4-uR0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbG-s8-PGh" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7kB-eH-MLa">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.2759221436" green="0.34504073419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hfr-nh-TL1" firstAttribute="top" secondItem="FbG-s8-PGh" secondAttribute="bottom" id="KVJ-2h-iox"/>
+                            <constraint firstItem="7kB-eH-MLa" firstAttribute="centerX" secondItem="2SE-R4-uR0" secondAttribute="centerX" id="RVw-ZQ-3Xz"/>
+                            <constraint firstItem="7kB-eH-MLa" firstAttribute="centerY" secondItem="2SE-R4-uR0" secondAttribute="centerY" id="efe-Ta-uV4"/>
+                            <constraint firstAttribute="trailing" secondItem="FbG-s8-PGh" secondAttribute="trailing" id="lEg-5g-3tb"/>
+                            <constraint firstItem="FbG-s8-PGh" firstAttribute="top" secondItem="IvN-MV-LdH" secondAttribute="bottom" id="s01-O8-6Fa"/>
+                            <constraint firstItem="FbG-s8-PGh" firstAttribute="leading" secondItem="2SE-R4-uR0" secondAttribute="leading" id="yuZ-vJ-kLh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="7kB-eH-MLa" id="DNL-jr-GvY"/>
+                        <outlet property="playerView" destination="FbG-s8-PGh" id="hYm-n7-3dz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fo7-Rg-gOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2884" y="-189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NgU-Vt-grz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M7O-8z-aso" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6hW-xh-mX3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bbu-CO-f6g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icY-rv-PJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="-150"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_history" width="26" height="26"/>
+        <image name="musclesPic" width="315" height="315"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yHY-Iw-iPW"/>
+    </inferredMetricsTieBreakers>
 </document>
